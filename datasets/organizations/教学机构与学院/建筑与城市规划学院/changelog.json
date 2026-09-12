@@ -1,0 +1,26 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:38:08",
+    "sha256": "bfe4c5f0e30be914498679797317962f41415c6ee30904c0783ce036cb7f6b3c",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集建筑与城市规划学院党政领导班子分工与联系系室",
+    "sources": [
+      "http://jzgh.hncu.edu.cn/xygk/xrld.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:38:08",
+    "sha256": "8c219307d3635591772113183c9a37b91f543a205edc633c4b6c450fafc6ec32",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集建筑与城市规划学院4大专业系、近80位专任教师与教授博士团队名录",
+    "sources": [
+      "http://jzgh.hncu.edu.cn/szll1/js.htm",
+      "http://jzgh.hncu.edu.cn/szll1/qnjs.htm",
+      "http://jzgh.hncu.edu.cn/xygk/gljg.htm"
+    ]
+  }
+]

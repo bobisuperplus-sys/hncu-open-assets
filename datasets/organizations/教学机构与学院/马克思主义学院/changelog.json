@@ -1,0 +1,27 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:46:55",
+    "sha256": "36e7cba622493ff909d4f83e63207841fd8457136a4126bdc35b2257e1f9871a",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集马克思主义学院党总支书记、院长班子及职责分工",
+    "sources": [
+      "http://mks.hncu.edu.cn/xygk/xrld.htm",
+      "http://mks.hncu.edu.cn/info/1108/4006.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:46:55",
+    "sha256": "c8b29184ae1f12cbcc5d2f7b51298381591b03f3259f8504ee40d98e8a54faeb",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集马克思主义学院6大教研室主任、办公地点与3大专门委员会",
+    "sources": [
+      "http://mks.hncu.edu.cn/info/1108/6824.htm",
+      "http://mks.hncu.edu.cn/info/1108/5959.htm",
+      "http://mks.hncu.edu.cn/xygk/szdw/dwgk.htm"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:46:55",
+    "sha256": "9d39777ca2412faadba9c2fe5862e46d4b0ffeff886c24ecf90ab1a1bee74da0",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集国际教育学院（国际处）正副处长职务分工与对外涉外职责",
+    "sources": [
+      "https://gjjyxy.hncu.edu.cn/xygk/gwzz.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与科室职责.md",
+    "timestamp": "2026-09-12 20:46:55",
+    "sha256": "2cfa3ff3ffb0a6ec5ddf2d58aa3dbc81583a0fc882250e573f8de12bf2d5d310",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集国际教育学院中外合作办学、留学生管理与孔子学院业务架构",
+    "sources": [
+      "https://gjjyxy.hncu.edu.cn/xygk/bmjj.htm",
+      "https://gjjyxy.hncu.edu.cn/xygk/gwzz.htm"
+    ]
+  }
+]

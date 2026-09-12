@@ -1,0 +1,29 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:40:06",
+    "sha256": "b566058e0b3c35620e54f458c128e07e12b5809f7b1e7c6847959581d8da87b5",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集管理学院领导班子全体成员与职责分工",
+    "sources": [
+      "http://www.hncu.edu.cn/xglxy/xygk/xrld.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:40:11",
+    "sha256": "c4922e841291ba25257ec0d5609e458b0ff5bb5ea511dd6e4c17304c8f954d66",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集管理学院6大专业系全体专任教师名录与社科研究基地",
+    "sources": [
+      "http://www.hncu.edu.cn/xglxy/szdw/zrjs/gcglx.htm",
+      "http://www.hncu.edu.cn/xglxy/szdw/zrjs/fdckfyglx.htm",
+      "http://www.hncu.edu.cn/xglxy/szdw/zrjs/lyglx.htm",
+      "http://www.hncu.edu.cn/xglxy/szdw/zrjs/ggglx.htm",
+      "http://www.hncu.edu.cn/xglxy/szdw/zrjs/cwglx.htm",
+      "http://www.hncu.edu.cn/xglxy/szdw/zrjs/jjtjxx.htm"
+    ]
+  }
+]

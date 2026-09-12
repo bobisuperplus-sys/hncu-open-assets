@@ -1,0 +1,28 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:41:03",
+    "sha256": "a17b9a6c1d5298668adc179f71c3b8b77ecf2b1df9b1ecf4f256cc4b91664de3",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集美术与设计学院党政领导班子分工",
+    "sources": [
+      "http://myxy.hncu.edu.cn/xygk/xyld.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:41:03",
+    "sha256": "ef2109b01df71899052180da6b56eb75b6052806c1d37d39d38bb666f9431130",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集美术与设计学院3大系室骨干教师、系主任班子与名师梯队",
+    "sources": [
+      "http://myxy.hncu.edu.cn/szdw.htm",
+      "http://myxy.hncu.edu.cn/szdw/sjcdsj.htm",
+      "http://myxy.hncu.edu.cn/szdw/msx.htm",
+      "http://myxy.hncu.edu.cn/szdw/hjsj.htm",
+      "http://myxy.hncu.edu.cn/szdw/msfc.htm"
+    ]
+  }
+]

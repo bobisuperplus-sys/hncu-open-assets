@@ -48,9 +48,7 @@ batch_forms_collector.py
 generate_forms_readme.py
 *forms_readme*
 
-
-
-
-
-
-
+# College builders & collector scripts
+batch_colleges*
+generate_batch*
+update_org_readme.py

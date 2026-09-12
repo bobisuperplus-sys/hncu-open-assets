@@ -1,0 +1,25 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:46:55",
+    "sha256": "3bed2c4f53ca147c72f2fd810d3dcf6fc7cf8357b28d2d9fae4a6c83a3179b2c",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集人文学院党政领导班子分工、办公地点与联系系室",
+    "sources": [
+      "http://wxy.hncu.edu.cn/info/1238/5545.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:46:55",
+    "sha256": "3e0b2f8633b60c5992efeb6c3302a0aefdab58e435ee3c78c6bd5a6baa496986",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采addr人文学院6大师资团队、各系主任与三周文化特色智库",
+    "sources": [
+      "http://wxy.hncu.edu.cn/info/1299/7264.htm",
+      "http://wxy.hncu.edu.cn/szdw/jsbsfc1.htm"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:38:08",
+    "sha256": "17494b30145f007a3b5fbb977e339b49a898347a9b042045bc5839905594c605",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集市政与测绘工程学院党政领导班子详细分工",
+    "sources": [
+      "http://szch.hncu.edu.cn/xygk/xrld.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:38:08",
+    "sha256": "31f409d2e753dbd44ec2757c8fae1fbca79bcf67c1eead99a9e5e5d630308686",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集市政与测绘工程学院管理科室、5大教学系、实验中心及高层次专任教师名单",
+    "sources": [
+      "http://szch.hncu.edu.cn/xygk/zzjg.htm",
+      "http://szch.hncu.edu.cn/szdw/jsfc.htm"
+    ]
+  }
+]

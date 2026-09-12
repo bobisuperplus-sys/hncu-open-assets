@@ -1,0 +1,26 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:41:03",
+    "sha256": "fb1c1641799ca6911a1e0d21fee4802f0ec2ba8db7278a3c856eed186e94937a",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集体育学院党委书记、院长与副院长5人班子办公室与分工",
+    "sources": [
+      "http://tyxy.hncu.edu.cn/info/2149/9209.htm",
+      "http://tyxy.hncu.edu.cn/info/2151/9210.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:41:03",
+    "sha256": "8e09fc94a4b6b8bdf7ca1bfaefd93ac555e3f3ce998ceeb603d0787266cd2fa4",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集体育学院3大教学系部、竞赛训练中心与教授队伍名录",
+    "sources": [
+      "http://tyxy.hncu.edu.cn/info/2151/9210.htm",
+      "http://tyxy.hncu.edu.cn/szdw/zzjs.htm"
+    ]
+  }
+]

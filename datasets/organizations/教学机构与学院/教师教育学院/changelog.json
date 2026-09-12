@@ -1,0 +1,25 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:41:03",
+    "sha256": "a7f46c943d5b51f4e8ae5b42b1cbafe97f6f4f3f0a96d9a42791f14a6f8c1f1c",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集教师教育学院党政领导班子全体成员与分工",
+    "sources": [
+      "https://jsjyxy.hncu.edu.cn/xygk/xrld.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:41:03",
+    "sha256": "a310e93d0953f25e8f3e31039505c33366d9cb8b1d0c82b07e9f095d300d7196",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集教师教育学院内设机构、3大教研室与师范认证师资架构",
+    "sources": [
+      "https://jsjyxy.hncu.edu.cn/szdw.htm",
+      "https://jsjyxy.hncu.edu.cn/szdw/xxjyjys.htm"
+    ]
+  }
+]

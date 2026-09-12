@@ -20,5 +20,17 @@
     "sources": [
       "http://xdy.hncu.edu.cn/xygk/nsjg.htm"
     ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:38:08",
+    "sha256": "2b10f2775deaf1435344f7ae94e022593c9ba28f58ed4a1f718c7a045f9a96a3",
+    "action": "initial_creation",
+    "summary": "版本升级：扩充信电学院教授博士学者梯队、五大系室专任师资与实验教学平台",
+    "sources": [
+      "http://xdy.hncu.edu.cn/xygk/nsjg.htm",
+      "http://xdy.hncu.edu.cn/xygk/jszbsfc.htm"
+    ]
   }
 ]

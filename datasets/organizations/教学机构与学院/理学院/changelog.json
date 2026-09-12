@@ -1,0 +1,30 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 20:40:11",
+    "sha256": "db3d8adb37d2d86b1f722b0d7763bbbda7c3f65e98c84701b27c512dbd7d502a",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集理学院党委与行政领导班子全员分工与联系系室",
+    "sources": [
+      "http://sjxy.hncu.edu.cn/xygk/ld.htm",
+      "http://sjxy.hncu.edu.cn/xygk/jgsz.htm",
+      "http://sjxy.hncu.edu.cn/info/1198/7412.htm",
+      "http://sjxy.hncu.edu.cn/info/1198/4979.htm",
+      "http://sjxy.hncu.edu.cn/info/1198/5612.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与师资队伍.md",
+    "timestamp": "2026-09-12 20:40:11",
+    "sha256": "359d0abc3b3cdd380e9068d7a0326f126275b5dde6843b94d8187436a33acc8f",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集理学院5大内设科室、督导组及数学系与公数教研室全体专任教师名录",
+    "sources": [
+      "http://sjxy.hncu.edu.cn/xygk/jgsz.htm",
+      "http://sjxy.hncu.edu.cn/szdw/sxyjskxx1.htm",
+      "http://sjxy.hncu.edu.cn/szdw/ggsxjys1.htm"
+    ]
+  }
+]
