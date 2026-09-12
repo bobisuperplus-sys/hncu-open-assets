@@ -28,3 +28,9 @@ venv/
 *.log
 *.tmp
 *.bak
+
+# Local regulation URL routing tables (do not commit or push to GitHub)
+regulations_routes.*
+*regulations_route*
+*route_table*
+
