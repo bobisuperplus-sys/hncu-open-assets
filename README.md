@@ -40,12 +40,13 @@ hncu-open-assets/
 │       └── hncu_knowledge.json    # 4MB 全校综合实体知识库
 │
 ├── branding/                      # 【品牌视觉与多媒体素材】
-│   ├── logos/                     # 官方校徽高清透明底
-│   │   └── hncu_logo.png
-│   ├── photos/                    # 校园实景摄影与横幅背景
-│   │   └── campus_scenery.jpg
-│   └── ui/                        # 校园通用人像/形象卡片背景
-│       └── avatar_background.png
+│   ├── README.md                  # 品牌标识版权说明与详细规范
+│   ├── logos/                     # 校徽与概念设计
+│   │   ├── official_hncu_logo.png     # 湖南城市学院官方标准校徽与题字组合 (Official)
+│   │   └── unofficial_hucity_logo.png # 作者私人原创设计的“HuCity”非官方衍生 Logo (Unofficial)
+│   └── photos/                    # 校园实景摄影与横幅背景
+│       ├── campus_gate_scenery.jpg    # 正大门校名石刻实景风景图 (2560×1003 Web版)
+│       └── campus_gate_scenery_uhd.jpg# 正大门实景 6K 印刷级超高清原图 (6192×2427)
 │
 ├── typography/                    # 【字体与排版资产】
 │   ├── fonts/
@@ -86,7 +87,13 @@ hncu-open-assets/
 ---
 
 ### 3. 视觉与字体资产 (`branding/` & `typography/`)
-* 包含了标准分辨率的透明底校徽矢量/PNG、校园实景大图，以及经典的北魏楷书字库。
+* **标志与徽标**：
+  * `official_hncu_logo.png`：湖南城市学院官方标准校标徽章与“湖南城市学院”全称行楷题字组合（版权归属学校官方）。
+  * `unofficial_hucity_logo.png`：项目作者**私人原创设计的非官方衍生概念 Logo**，融合拱桥与建筑立柱，兼具现代扁平化活力与益阳“银城”特色。
+* **实景风貌**：
+  * 提供正大门校名石刻实景风景图的标准 Web 优化版及 6K 级超高清原图（`campus_gate_scenery.jpg` / `campus_gate_scenery_uhd.jpg`），适用于网站横幅、卡片展示或桌面壁纸。
+* **书法字体**：
+  * 经典的北魏楷书字库（方正北魏楷书简体.ttf），附带跨平台 WebFont 压缩转换指南。
 
 ---
 
@@ -143,8 +150,8 @@ for item in faq_data['items']:
 ## 🤝 开源协议与贡献指南 (License & Contributing)
 
 1. **代码与通用格式资产**：基于 [MIT License](LICENSE) 许可协议开放给广大开发者免费使用。
-2. **知识产权与校名标识说明**：
-   - 湖南城市学院校徽、校名文字等品牌标识所有权归属于**湖南城市学院**官方所有，仅供学术科研、校园开发与非营利性公益展示使用；
-   - 商业用途请联系学校官方有关部门授权。
+2. **知识产权与标识说明**：
+   - **官方校徽与题字**（`branding/logos/official_hncu_logo.png`）：品牌所有权归属于**湖南城市学院**官方所有，仅供教学科研、校园开发与非营利性公益展示使用；商业用途请联系学校有关部门授权。
+   - **私人原创概念设计**（`branding/logos/unofficial_hucity_logo.png`）：由开源作者私人原创设计，遵循本项目 MIT 协议，供社区衍生项目自由参考与使用。
 3. **欢迎贡献**：
-   - 欢迎广大城院校友与在校师生提交 Pull Request 补充更高精度的建筑模型、精美贴图、校园全景摄影或最新政策问答！
+   - 欢迎广大城院校友与在校师生提交 Pull Request 补充更高精度的建筑模型、精美贴图、校园实景摄影或最新政策规章问答！
