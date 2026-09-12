@@ -52,3 +52,9 @@ generate_forms_readme.py
 batch_colleges*
 generate_batch*
 update_org_readme.py
+
+# Local maintenance manual & architecture docs (DO NOT COMMIT)
+LOCAL_MAINTENANCE_MANUAL.md
+*MAINTENANCE_MANUAL*
+*WORKFLOW_GUIDE*
+
