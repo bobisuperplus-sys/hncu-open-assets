@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Format: glTF 2.0](https://img.shields.io/badge/3D_Format-glTF_2.0-blue.svg)](https://www.khronos.org/gltf/)
-[![Format: GeoJSON/JSON](https://img.shields.io/badge/Dataset-JSON%2FMarkdown-green.svg)](https://json.org/)
+[![Format: Markdown/PDF/Office](https://img.shields.io/badge/Dataset-Markdown%2FPDF%2FOffice-green.svg)](https://github.com/)
 
-`hncu-open-assets` 是面向**湖南城市学院（HNCU）**校园开发者、数字孪生研究人员及开源社区的**跨平台通用数字化校园资产库**。
+`hncu-open-assets` 是面向**湖南城市学院（HNCU）**校园开发者、在校师生及开源社区的**跨平台通用数字化校园第一手基础资产库**。专注于收录、保存与维护学校最原生、最标准的基础资产（3D 空间模型、官方规章制度、办事表单模板、历年学术考试真题与品牌视觉素材）。
 
 ---
 
@@ -12,7 +12,7 @@
 
 ```text
 hncu-open-assets/
-├── models/                        # 【3D 空间与建筑资产】(开放标准 glTF 2.0 / GLB)
+├── models/                        # 【3D 空间与建筑资产】(开放标准 glTF 2.0 / GLB 原生模型)
 │   ├── campus/                    # 校园全景大场景
 │   │   ├── school.glb             # 湖南城市学院全景 3D 模型 (含建筑物、道路、东阳湖水系)
 │   │   ├── buildings_index.json   # 55 栋建筑物中英文名称、分类与 Mesh ID 索引表
@@ -22,10 +22,7 @@ hncu-open-assets/
 │   └── compatibility/             # (可选) 引擎预编译网格归档
 │       └── qt_quick3d_meshes/     # 针对 Qt 6 Quick 3D 渲染管线优化的 .mesh 资产
 │
-├── datasets/                      # 【校园数据与知识资产】(通用 JSON / Markdown，开箱支持 AI RAG)
-│   ├── faq/                       # 校园生活高频常见问题与官方权威解答
-│   │   ├── campus_faq.json        # 结构化问答对 (可直接用于智能客服与知识库检索)
-│   │   └── campus_faq.md          # Markdown 问答速查表
+├── datasets/                      # 【官方制度与办事资产】(权威政策规章与审批表单原件)
 │   ├── regulations/               # 官方在校规章制度 Markdown 全集 (共 33 份权威规章)
 │   │   ├── README.md              # 规章制度全景索引表 (含发文字号、管理部门与核心要点)
 │   │   ├── 湖南城市学院学生学籍管理规定(2025版_湘城院发〔2025〕63号).md
@@ -37,15 +34,13 @@ hncu-open-assets/
 │   │   ├── 湖南城市学院学生违纪处分条例(2025版_湘城院发〔2025〕19号).md
 │   │   ├── 湖南城市学院学生公寓管理规定(2025版_湘城院发〔2025〕20号).md
 │   │   └── 综合测评条例(2025版)、学风建设细则(2023版)、毕业训练、实习实验等 33 篇规章
-│   ├── forms/                     # 官方常用办事表单与政策指南库 (共 35 份原版附件)
-│   │   ├── README.md              # 办事表单全景索引与师生办事指引
-│   │   ├── 学籍考试类/            # 16 份高频学籍异动/免修/退费/证明 Word 表单
-│   │   ├── 实践教学与学科竞赛/    # 7 份校外毕设/学科竞赛立项/加权审批 Word 表单
-│   │   ├── 专业建设与人才培养/    # 8 份人才培养方案全书(上下卷)与国家级教学标准 PDF
-│   │   ├── 学生资助与奖励政策/    # 2 份资助政策宣传手册与文件
-│   │   └── 组织人事与干部管理/    # 2 份因私出国境审批表单
-│   └── knowledge/                 # 校园知识图谱与结构化综合数据
-│       └── hncu_knowledge.json    # 4MB 全校综合实体知识库
+│   └── forms/                     # 官方常用办事表单与政策指南库 (共 35 份原版附件)
+│       ├── README.md              # 办事表单全景索引与师生办事指引
+│       ├── 学籍考试类/            # 16 份高频学籍异动/免修/退费/证明 Word 表单
+│       ├── 实践教学与学科竞赛/    # 7 份校外毕设/学科竞赛立项/加权审批 Word 表单
+│       ├── 专业建设与人才培养/    # 8 份人才培养方案全书(上下卷)与国家级教学标准 PDF
+│       ├── 学生资助与奖励政策/    # 2 份资助政策宣传手册与文件
+│       └── 组织人事与干部管理/    # 2 份因私出国境审批表单
 │
 ├── academics/                     # 【学术与备考资料】(按 学科/学年 双层规范组织，支持长期增量更新)
 │   ├── README.md                  # 考试真题与复习资料全景索引指南 (含完整多学年索引表)
@@ -73,18 +68,10 @@ hncu-open-assets/
 │       ├── campus_gate_scenery.jpg    # 正大门校名石刻实景风景图 (2560×1003 Web版)
 │       └── campus_gate_scenery_uhd.jpg# 正大门实景 6K 印刷级超高清原图 (6192×2427)
 │
-├── typography/                    # 【字体与排版资产】
-│   ├── fonts/
-│   │   └── 方正北魏楷书简体.ttf   # 经典北魏楷书字库 (适用于大标题、证书及抬头)
-│   └── README.md                  # WebFont 转换与前端使用指引
-│
-└── examples/                      # 【跨技术栈通用开箱即用示例】
-    ├── web_threejs/               # Web 纯原生 Three.js 3D 校园全景浏览交互页面
-    │   ├── index.html             # 双击即开的浏览器 3D 交互页面
-    │   └── README.md
-    └── python_knowledge/          # Python 3 行代码加载校园知识库检索演示
-        ├── search_faq.py
-        └── README.md
+└── typography/                    # 【字体与排版资产】
+    ├── fonts/
+    │   └── 方正北魏楷书简体.ttf   # 经典北魏楷书字库 (适用于大标题、证书及抬头)
+    └── README.md                  # WebFont 转换与前端使用指引
 ```
 
 ---
@@ -99,17 +86,15 @@ hncu-open-assets/
   * **原生系统**：Windows 3D 查看器、macOS QuickLook。
 * **主要场景**：
   * `school.glb`：基于 OpenStreetMap 真实地理空间高程构建的城院主校区模型，包含 57 个 Mesh 与 65 个 Node，完整覆盖**逸夫图书馆、1-3号教学楼、一/二工训楼、电信楼、土木楼、管理楼、音乐厅、主体育场、东阳湖水系与 1~26 栋学生公寓群**。
-  * `buildings_index.json`：清晰整理了全校 55 栋核心建筑与公共设施的 ID、中英文名称及功能属性分类（行政、教学、住宿、生活、基础设施），极大方便了 3D 室内外联动、地标打点（POI）与路径导航开发。
+  * `buildings_index.json`：清晰整理了全校 55 栋核心建筑与公共设施的 ID、中英文名称及功能属性分类（行政、教学、住宿、生活、基础设施），方便 3D 室内外联动、地标打点（POI）与路径导航开发。
 
 ---
 
-### 2. 校园生活知识与规章数据集 (`datasets/`)
-* **高频问答 (`campus_faq.json`)**：
-  * 涵盖一卡通补卡（服务大厅窗口与夏冬作息）、宿舍门禁（23:30）、四人寝宿舍楼栋（18-26栋）、奖助学金、学分规定、旷课处分等级、转专业要求等官方标准问答对。
+### 2. 官方规章与常用表单资产 (`datasets/`)
 * **制度规章全集 (`regulations/`)**：
   * 系统归纳收录教务处、党委学生工作部（处）、校学位评定委员会、后勤管理处与财务处发布的 **33 份官方在校权威规章与指引**。
   * 全面涵盖：2025/2026 最新印发的《学生学籍管理规定》《全日制普通本科生转专业管理办法》《课程考核及成绩管理办法》《学科竞赛管理办法》《学士学位授予工作细则》《辅修专业学士学位管理办法》《学生违纪处分条例》《学生公寓管理规定》《综合素质测评条例》《毕业综合训练管理办法》《实习教学管理办法》《实验教学管理办法》《劳动教育方案》等。
-  * 纯文本 Markdown 结构化存储，附带规范发文字号元数据与章节 TOC 目录，开箱即用支持大模型 RAG（如 Chroma / Milvus / FAISS）按章节精准切块与向量化检索。配套独立索引文档 [`datasets/regulations/README.md`](datasets/regulations/README.md)。
+  * 纯文本 Markdown 结构化存储，附带规范发文字号元数据与章节 TOC 目录，保留全部官方条款编号。配套独立索引文档 [`datasets/regulations/README.md`](datasets/regulations/README.md)。
 * **官方常用表单与政策指南库 (`forms/`)**：
   * 全面收录各部门官方下发的原版附件（共 **35 份文件**），分类归档为：
     * **学籍考试类（16 份 Word 表单）**：转专业申请表/承诺书、重修退费、学籍证明、学籍异动学分互认、休学/复学/退学/降级审批表、补办毕业证明书、代领委托书、境外交流学分互认等；
@@ -138,7 +123,6 @@ hncu-open-assets/
 
 ---
 
-
 ### 4. 视觉与字体资产 (`branding/` & `typography/`)
 * **标志与徽标**：
   * `official_hncu_logo.png`：湖南城市学院官方标准校标徽章与“湖南城市学院”全称行楷题字组合（版权归属学校官方）。
@@ -150,56 +134,6 @@ hncu-open-assets/
 
 ---
 
-## 💻 快速开箱即用指南 (Quick Start)
-
-### 场景 A：在 Web 网页中渲染 3D 校园 (Three.js)
-
-无需任何复杂依赖，前端加载 `school.glb` 仅需几行核心代码：
-
-```javascript
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-
-const scene = new THREE.Scene();
-const loader = new GLTFLoader();
-
-// 异步加载湖南城市学院全景模型
-loader.load('models/campus/school.glb', (gltf) => {
-  scene.add(gltf.scene);
-  console.log("湖南城市学院 3D 校园全景模型加载成功！");
-});
-```
-> 💡 完整可交互的 360° 漫游演示页面见 [`examples/web_threejs/index.html`](examples/web_threejs/index.html)。
-
----
-
-### 场景 B：在 Python / AI Agent 中使用校园知识库
-
-```python
-import json
-
-# 1. 加载校园生活高频常见问答
-with open('datasets/faq/campus_faq.json', 'r', encoding='utf-8') as f:
-    faq_data = json.load(f)
-
-# 2. 快速匹配问答
-user_query = "饭卡掉了"
-for item in faq_data['items']:
-    if user_query in item['question']:
-        print(f"Q: {item['question']}\nA: {item['answer']}")
-```
-> 💡 完整示例脚本见 [`examples/python_knowledge/search_faq.py`](examples/python_knowledge/search_faq.py)。
-
----
-
-### 场景 C：在 Unity 游戏引擎中使用
-
-1. 将 `models/campus/school.glb` 直接拖入 Unity 工程的 `Assets/Models/` 目录下；
-2. 安装 Unity 官方扩展包 `glTFast` 或直接提取材质；
-3. 将 Prefab 拖入 Scene 视口，添加网格碰撞体（Mesh Collider）即可实现第一人称校园漫游。
-
----
-
 ## 🤝 开源协议与贡献指南 (License & Contributing)
 
 1. **代码与通用格式资产**：基于 [MIT License](LICENSE) 许可协议开放给广大开发者免费使用。
@@ -207,4 +141,4 @@ for item in faq_data['items']:
    - **官方校徽与题字**（`branding/logos/official_hncu_logo.png`）：品牌所有权归属于**湖南城市学院**官方所有，仅供教学科研、校园开发与非营利性公益展示使用；商业用途请联系学校有关部门授权。
    - **私人原创概念设计**（`branding/logos/unofficial_hucity_logo.png`）：由开源作者私人原创设计，遵循本项目 MIT 协议，供社区衍生项目自由参考与使用。
 3. **欢迎贡献**：
-   - 欢迎广大城院校友与在校师生提交 Pull Request 补充更高精度的建筑模型、精美贴图、校园实景摄影或最新政策规章问答！
+   - 欢迎广大城院校友与在校师生提交 Pull Request 补充更高精度的建筑模型、精美贴图、校园实景摄影、学术备考资料或最新政策规章！
