@@ -1,0 +1,394 @@
+{
+  "campus_name": "湖南城市学院 (Hunan City University)",
+  "location": "湖南省益阳市迎宾东路517号",
+  "total_buildings": 55,
+  "model_file": "school.glb",
+  "format": "glTF 2.0 (Binary)",
+  "buildings": [
+    {
+      "id": "shawLibrary",
+      "name_zh": "逸夫图书馆",
+      "name_en": "Shaw Library",
+      "category": "教学科研",
+      "type": "building"
+    },
+    {
+      "id": "firstTeachingBuilding",
+      "name_zh": "第一教学楼 (1教)",
+      "name_en": "1st Teaching Building",
+      "category": "教学科研",
+      "type": "building"
+    },
+    {
+      "id": "secondTeachingBuilding",
+      "name_zh": "第二教学楼 (2教)",
+      "name_en": "2nd Teaching Building",
+      "category": "教学科研",
+      "type": "building"
+    },
+    {
+      "id": "thirdTeachingBuilding",
+      "name_zh": "第三教学楼 (3教)",
+      "name_en": "3rd Teaching Building",
+      "category": "教学科研",
+      "type": "building"
+    },
+    {
+      "id": "firstIndustrialTrainingBuilding",
+      "name_zh": "第一工业实训楼 (一工训楼)",
+      "name_en": "1st Industrial Training Building",
+      "category": "教学实训",
+      "type": "building"
+    },
+    {
+      "id": "secondIndustrialTrainingBuilding",
+      "name_zh": "第二工业实训楼 (二工训楼)",
+      "name_en": "2nd Industrial Training Building",
+      "category": "教学实训",
+      "type": "building"
+    },
+    {
+      "id": "telecomBuilding",
+      "name_zh": "信息与电子工程学院楼 (电信楼)",
+      "name_en": "Information & Electronic Engineering Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "civilEngineering_Building",
+      "name_zh": "土木工程学院楼",
+      "name_en": "Civil Engineering Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "cityMeasurementBuilding",
+      "name_zh": "市政与测绘工程学院楼",
+      "name_en": "Municipal & Surveying Engineering Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "chemicalEngineeringBuilding",
+      "name_zh": "化学与环境工程学院楼",
+      "name_en": "Chemical & Environmental Engineering Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "managementBuilding",
+      "name_zh": "管理学院楼",
+      "name_en": "School of Management Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "artBuilding",
+      "name_zh": "艺术学院楼",
+      "name_en": "School of Fine Arts Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "meiyiBuilding",
+      "name_zh": "美艺楼",
+      "name_en": "Fine Arts & Design Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "musicBuilding",
+      "name_zh": "音乐学院教学楼",
+      "name_en": "School of Music Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "musicRoom",
+      "name_zh": "音乐学院琴房楼",
+      "name_en": "Music Practice Hall",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "firstOfficeBuilding",
+      "name_zh": "第一行政办公楼",
+      "name_en": "1st Administration Office Building",
+      "category": "行政管理",
+      "type": "building"
+    },
+    {
+      "id": "secondOfficeBuilding",
+      "name_zh": "第二行政办公楼",
+      "name_en": "2nd Administration Office Building",
+      "category": "行政管理",
+      "type": "building"
+    },
+    {
+      "id": "comprehensiveServiceBuilding",
+      "name_zh": "一站式综合服务大厅",
+      "name_en": "Comprehensive Student Service Center",
+      "category": "行政服务",
+      "type": "building"
+    },
+    {
+      "id": "buildingPlanning",
+      "name_zh": "规划建筑设计楼",
+      "name_en": "Urban Planning & Architectural Design Building",
+      "category": "学院专教",
+      "type": "building"
+    },
+    {
+      "id": "concertHall",
+      "name_zh": "音乐厅 / 演艺中心",
+      "name_en": "Concert Hall & Performance Center",
+      "category": "文化艺术",
+      "type": "facility"
+    },
+    {
+      "id": "sportsTrainingHall",
+      "name_zh": "体育训练馆",
+      "name_en": "Sports Training Gymnasium",
+      "category": "文体设施",
+      "type": "facility"
+    },
+    {
+      "id": "newstadium",
+      "name_zh": "主体育场田径场",
+      "name_en": "Main Athletic Stadium",
+      "category": "文体设施",
+      "type": "facility"
+    },
+    {
+      "id": "infirmary",
+      "name_zh": "校医院 / 卫生所",
+      "name_en": "Campus Health Clinic / Infirmary",
+      "category": "医疗生活",
+      "type": "facility"
+    },
+    {
+      "id": "newcanteen",
+      "name_zh": "新食堂 (学生第二餐饮中心)",
+      "name_en": "New Student Canteen (Dining Hall 2)",
+      "category": "生活餐饮",
+      "type": "facility"
+    },
+    {
+      "id": "oldcanteen",
+      "name_zh": "老食堂 (学生第一餐饮中心)",
+      "name_en": "Old Student Canteen (Dining Hall 1)",
+      "category": "生活餐饮",
+      "type": "facility"
+    },
+    {
+      "id": "dongtian",
+      "name_zh": "东天大厦",
+      "name_en": "Dongtian Commercial Building",
+      "category": "生活配套",
+      "type": "building"
+    },
+    {
+      "id": "dongtianbathroom",
+      "name_zh": "东天公共浴室",
+      "name_en": "Dongtian Campus Bathhouse",
+      "category": "生活配套",
+      "type": "facility"
+    },
+    {
+      "id": "map_3_osm_roads_service",
+      "name_zh": "校园道路交通系统",
+      "name_en": "Campus Road & Transportation Network",
+      "category": "基础设施",
+      "type": "infrastructure"
+    },
+    {
+      "id": "map_3_osm_water",
+      "name_zh": "东阳湖校园水系水体",
+      "name_en": "Dongyang Lake Waterbody Network",
+      "category": "基础设施",
+      "type": "infrastructure"
+    },
+    {
+      "id": "building1",
+      "name_zh": "学生公寓第 1 栋",
+      "name_en": "Student Dormitory Building 1",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building2",
+      "name_zh": "学生公寓第 2 栋",
+      "name_en": "Student Dormitory Building 2",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building3",
+      "name_zh": "学生公寓第 3 栋",
+      "name_en": "Student Dormitory Building 3",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building4",
+      "name_zh": "学生公寓第 4 栋",
+      "name_en": "Student Dormitory Building 4",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building5",
+      "name_zh": "学生公寓第 5 栋",
+      "name_en": "Student Dormitory Building 5",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building6",
+      "name_zh": "学生公寓第 6 栋",
+      "name_en": "Student Dormitory Building 6",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building7",
+      "name_zh": "学生公寓第 7 栋",
+      "name_en": "Student Dormitory Building 7",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building8",
+      "name_zh": "学生公寓第 8 栋",
+      "name_en": "Student Dormitory Building 8",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building9",
+      "name_zh": "学生公寓第 9 栋",
+      "name_en": "Student Dormitory Building 9",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building10",
+      "name_zh": "学生公寓第 10 栋",
+      "name_en": "Student Dormitory Building 10",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building11",
+      "name_zh": "学生公寓第 11 栋",
+      "name_en": "Student Dormitory Building 11",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building12",
+      "name_zh": "学生公寓第 12 栋",
+      "name_en": "Student Dormitory Building 12",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building13",
+      "name_zh": "学生公寓第 13 栋",
+      "name_en": "Student Dormitory Building 13",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building14",
+      "name_zh": "学生公寓第 14 栋",
+      "name_en": "Student Dormitory Building 14",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building15",
+      "name_zh": "学生公寓第 15 栋",
+      "name_en": "Student Dormitory Building 15",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building16",
+      "name_zh": "学生公寓第 16 栋",
+      "name_en": "Student Dormitory Building 16",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building17",
+      "name_zh": "学生公寓第 17 栋",
+      "name_en": "Student Dormitory Building 17",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building18",
+      "name_zh": "学生公寓第 18 栋",
+      "name_en": "Student Dormitory Building 18",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building19",
+      "name_zh": "学生公寓第 19 栋",
+      "name_en": "Student Dormitory Building 19",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building20",
+      "name_zh": "学生公寓第 20 栋",
+      "name_en": "Student Dormitory Building 20",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building21",
+      "name_zh": "学生公寓第 21 栋",
+      "name_en": "Student Dormitory Building 21",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building22",
+      "name_zh": "学生公寓第 22 栋",
+      "name_en": "Student Dormitory Building 22",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building23",
+      "name_zh": "学生公寓第 23 栋",
+      "name_en": "Student Dormitory Building 23",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building24",
+      "name_zh": "学生公寓第 24 栋",
+      "name_en": "Student Dormitory Building 24",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building25",
+      "name_zh": "学生公寓第 25 栋",
+      "name_en": "Student Dormitory Building 25",
+      "category": "学生住宿",
+      "type": "dormitory"
+    },
+    {
+      "id": "building26",
+      "name_zh": "学生公寓第 26 栋",
+      "name_en": "Student Dormitory Building 26",
+      "category": "学生住宿",
+      "type": "dormitory"
+    }
+  ]
+}

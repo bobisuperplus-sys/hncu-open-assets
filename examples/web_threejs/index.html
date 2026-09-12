@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>湖南城市学院 3D 校园全景浏览 (Three.js Web Demo)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      overflow: hidden;
+      background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #fff;
+    }
+    #canvas-container {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+    .hud-panel {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+      max-width: 360px;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .hud-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .hud-desc {
+      font-size: 12px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      background: #090a0f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      transition: opacity 0.5s ease;
+    }
+    .spinner {
+      width: 44px;
+      height: 44px;
+      border: 3px solid rgba(56, 189, 248, 0.2);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 16px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .loading-text {
+      font-size: 14px;
+      color: #cbd5e1;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <!-- Three.js 与控制器 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+  <div id="loading" class="loading-overlay">
+    <div class="spinner"></div>
+    <div id="loading-text" class="loading-text">正在加载湖南城市学院 3D 校园全景模型 (school.glb)...</div>
+  </div>
+
+  <div class="hud-panel">
+    <div class="hud-title">
+      <span>🏛️</span> 湖南城市学院 3D 数字校园
+    </div>
+    <div class="hud-desc">
+      鼠标左键：360° 旋转视角<br>
+      鼠标右键：平移画布<br>
+      滚轮：拉近 / 推远视角
+    </div>
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <script>
+    const container = document.getElementById("canvas-container");
+    const loadingOverlay = document.getElementById("loading");
+    const loadingText = document.getElementById("loading-text");
+
+    // 1. 场景
+    const scene = new THREE.Scene();
+
+    // 2. 相机
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 5000);
+    camera.position.set(200, 180, 260);
+
+    // 3. 渲染器
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.2;
+    container.appendChild(renderer.domElement);
+
+    // 4. 轨道控制器
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.maxPolarAngle = Math.PI / 2.05; // 防止穿入地底
+
+    // 5. 光照环境
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
+    scene.add(ambientLight);
+
+    const dirLight = new THREE.DirectionalLight(0xfff8e7, 1.8);
+    dirLight.position.set(150, 300, 150);
+    dirLight.castShadow = true;
+    dirLight.shadow.mapSize.width = 2048;
+    dirLight.shadow.mapSize.height = 2048;
+    scene.add(dirLight);
+
+    const hemiLight = new THREE.HemisphereLight(0x38bdf8, 0x1e293b, 0.6);
+    scene.add(hemiLight);
+
+    // 6. 辅助网格底盘
+    const gridHelper = new THREE.GridHelper(600, 40, 0x38bdf8, 0x1e293b);
+    gridHelper.position.y = -0.5;
+    scene.add(gridHelper);
+
+    // 7. 加载 glTF / GLB 模型
+    const loader = new THREE.GLTFLoader();
+    const modelUrl = "../../models/campus/school.glb";
+
+    loader.load(
+      modelUrl,
+      (gltf) => {
+        const model = gltf.scene;
+
+        // 自动计算包围盒并居中
+        const box = new THREE.Box3().setFromObject(model);
+        const center = box.getCenter(new THREE.Vector3());
+        model.position.sub(center);
+
+        model.traverse((child) => {
+          if (child.isMesh) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+          }
+        });
+
+        scene.add(model);
+
+        // 隐藏加载动画
+        loadingOverlay.style.opacity = "0";
+        setTimeout(() => {
+          loadingOverlay.style.display = "none";
+        }, 500);
+      },
+      (xhr) => {
+        if (xhr.lengthComputable) {
+          const percent = Math.round((xhr.loaded / xhr.total) * 100);
+          loadingText.innerText = `正在加载 3D 校园全景模型... ${percent}%`;
+        }
+      },
+      (error) => {
+        console.error("模型加载失败:", error);
+        loadingText.innerHTML = `⚠️ 无法直接加载模型（可能受限于浏览器的本地 file:// 跨域策略）。<br><br>💡 请在项目根目录下启动静态服务器：<br><code style="color:#38bdf8">python3 -m http.server 8080</code><br>然后访问 <a href="http://localhost:8080/examples/web_threejs/" style="color:#38bdf8">http://localhost:8080/examples/web_threejs/</a>`;
+      }
+    );
+
+    // 8. 窗口自适应
+    window.addEventListener("resize", () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // 9. 动画渲染循环
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>
