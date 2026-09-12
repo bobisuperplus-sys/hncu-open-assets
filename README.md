@@ -122,7 +122,7 @@ hncu-open-assets/
   * 配套独立索引文档 [`datasets/forms/README.md`](datasets/forms/README.md)。
 * **机构设置与人员职责库 (`organizations/`)**：
   * **三层版本化防覆盖架构**：针对学校领导班子与科室人员“覆盖式更新”的痛点，创新性采用 **“当前生效视图（Active） + 历史快照库（History） + 变更履历（Changelog）”** 三层版本化归档机制，确保任何人事更替、机构调整均可永久溯源。
-  * 首批收录 **教务处、信息与电子工程学院、党委学生工作部（处）/武装部** 的现任领导班子分工、全体科室/系室划分、岗位职责、办公地点及直拔座机电话，并建立初始 `v1.0` 版本与变更追踪审计日志。配套独立规范文档 [`datasets/organizations/README.md`](datasets/organizations/README.md)。
+  * 现已收录 **学校党政领导班子、人事处（党委教师工作部）、教务处、党委学生工作部（处）/武装部、信息与电子工程学院** 的现任领导班子分工、全体科室/系室划分、岗位职责、办公地点及直拔座机电话，并建立初始 `v1.0` 版本与变更追踪审计日志。配套独立规范文档 [`datasets/organizations/README.md`](datasets/organizations/README.md)。
 
 ---
 

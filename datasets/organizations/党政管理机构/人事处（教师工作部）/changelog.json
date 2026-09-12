@@ -1,0 +1,25 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 16:45:57",
+    "sha256": "160943263d46127a74fa8770bae5d9a3468c213104be6b8783e128b2502e8288",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集人事处全体科室人员名单、职务、办公座机与职责分工",
+    "sources": [
+      "http://www.hncu.edu.cn/xrsc/jgsz/bmcyfg.htm",
+      "http://www.hncu.edu.cn/xrsc/info/1121/1660.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与科室职责.md",
+    "timestamp": "2026-09-12 16:45:57",
+    "sha256": "141ddd60b7ea3c340ce8946248282b50644e20013bd383392cbd14e7cb07bf5a",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集人事处总体职能与内设三大科室业务范围",
+    "sources": [
+      "http://www.hncu.edu.cn/xrsc/jgsz/gzzz.htm"
+    ]
+  }
+]

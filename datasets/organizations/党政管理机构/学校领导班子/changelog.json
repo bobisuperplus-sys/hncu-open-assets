@@ -1,0 +1,13 @@
+[
+  {
+    "version": "v1.0",
+    "file": "现任校领导班子分工.md",
+    "timestamp": "2026-09-12 16:45:57",
+    "sha256": "27f0bfda947c78b5ee071de576b7829f40cd7f388367471d854740f5a0e85653",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集全校现任党政领导班子分工、分管部门与联系学院",
+    "sources": [
+      "https://www.hncu.edu.cn/cygk/xrld.htm"
+    ]
+  }
+]
