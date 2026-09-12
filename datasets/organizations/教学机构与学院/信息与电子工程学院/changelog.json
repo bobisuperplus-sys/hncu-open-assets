@@ -1,0 +1,24 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 16:26:27",
+    "sha256": "25d8796ccd56b90080c3870d1fb48282b6833a82888c2634e702ed9ee42431c1",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集信电学院党政班子分工、联系系室与党支部",
+    "sources": [
+      "http://xdy.hncu.edu.cn/xygk/xrld.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与科室职责.md",
+    "timestamp": "2026-09-12 16:26:27",
+    "sha256": "ba58df9c3a25eb16c92969ac6d937ace2c197750e4588e55473c2a50ebcfc5b1",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集信电学院组织架构树、行政办公室职责与教学系室分布",
+    "sources": [
+      "http://xdy.hncu.edu.cn/xygk/nsjg.htm"
+    ]
+  }
+]

@@ -35,5 +35,16 @@ regulations_routes.*
 *route_table*
 regulations_tracker.py
 *regulations_tracker*
+school_nodes_manifest.*
+*nodes_manifest*
+nodes_explorer.py
+*nodes_explorer*
+org_version_tracker.py
+*version_tracker*
+populate_pilot_orgs.py
+*pilot_orgs*
+
+
+
 
 

@@ -1,0 +1,25 @@
+[
+  {
+    "version": "v1.0",
+    "file": "领导班子与人员分工.md",
+    "timestamp": "2026-09-12 16:26:27",
+    "sha256": "fc6dd467effa99fa276bb833eacb21f8bf007ecc3c041789a65f031b590a52f1",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集学工部/武装部部长班子与科室主任详细分工与座机电话",
+    "sources": [
+      "http://xsc.hncu.edu.cn/bmgk/gzzz.htm",
+      "http://xsc.hncu.edu.cn/bmgk/jgjj.htm"
+    ]
+  },
+  {
+    "version": "v1.0",
+    "file": "机构设置与科室职责.md",
+    "timestamp": "2026-09-12 16:26:27",
+    "sha256": "7c6ab96440128740cdda0cad41434912499e90e9d1c189d55c3252e6a678452c",
+    "action": "initial_creation",
+    "summary": "初始版本建立：采集学工部/武装部总体职责、5个行政科室与3大教研室设置",
+    "sources": [
+      "http://xsc.hncu.edu.cn/bmgk/jgjj.htm"
+    ]
+  }
+]
