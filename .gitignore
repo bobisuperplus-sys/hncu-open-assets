@@ -43,6 +43,12 @@ org_version_tracker.py
 *version_tracker*
 populate_pilot_orgs.py
 *pilot_orgs*
+batch_forms_collector.py
+*forms_collector*
+generate_forms_readme.py
+*forms_readme*
+
+
 
 
 
